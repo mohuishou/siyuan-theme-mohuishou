@@ -1,0 +1,17 @@
+languages = js, javascript, c, cpp, go, php, java, python, css, html, json,shell,bash,sh,sql,yaml,ini,plaintext,xml
+
+for num in range(0,(length(languages) - 1))
+  code[class~={s('"language-%s"', languages[num])}]::before
+    content: s('"%s"', languages[num])
+
+code::before 
+  position absolute
+  color #b8bec2 !important
+  display inline-block
+  cursor pointer
+  right 40px
+  top 0.45em
+  z-index 0
+  font-weight 600
+  padding 1px 0px
+  font-size 16px
