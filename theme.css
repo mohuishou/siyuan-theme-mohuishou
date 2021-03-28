@@ -123,74 +123,76 @@
   font-style: normal;
   src: url("fonts/FiraCode-Regular.ttf");
 }
-.vditor-reset code[class~="language-js"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-js"]::before {
   content: "js";
 }
-.vditor-reset code[class~="language-javascript"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-javascript"]::before {
   content: "javascript";
 }
-.vditor-reset code[class~="language-c"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-c"]::before {
   content: "c";
 }
-.vditor-reset code[class~="language-cpp"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-cpp"]::before {
   content: "cpp";
 }
-.vditor-reset code[class~="language-go"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-go"]::before {
   content: "go";
 }
-.vditor-reset code[class~="language-php"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-php"]::before {
   content: "php";
 }
-.vditor-reset code[class~="language-java"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-java"]::before {
   content: "java";
 }
-.vditor-reset code[class~="language-python"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-python"]::before {
   content: "python";
 }
-.vditor-reset code[class~="language-css"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-css"]::before {
   content: "css";
 }
-.vditor-reset code[class~="language-html"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-html"]::before {
   content: "html";
 }
-.vditor-reset code[class~="language-json"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-json"]::before {
   content: "json";
 }
-.vditor-reset code[class~="language-shell"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-shell"]::before {
   content: "shell";
 }
-.vditor-reset code[class~="language-bash"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-bash"]::before {
   content: "bash";
 }
-.vditor-reset code[class~="language-sh"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-sh"]::before {
   content: "sh";
 }
-.vditor-reset code[class~="language-sql"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-sql"]::before {
   content: "sql";
 }
-.vditor-reset code[class~="language-yaml"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-yaml"]::before {
   content: "yaml";
 }
-.vditor-reset code[class~="language-ini"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-ini"]::before {
   content: "ini";
 }
-.vditor-reset code[class~="language-plaintext"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-plaintext"]::before {
   content: "plaintext";
 }
-.vditor-reset code[class~="language-xml"]::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-xml"]::before {
   content: "xml";
 }
-.vditor-reset code::before {
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code.hljs {
+  margin: 4px;
+  padding-bottom: 16px !important;
+}
+.vditor-reset .vditor-ir__node[data-type="code-block"] pre code.hljs::before {
   position: absolute;
   color: #b8bec2 !important;
   display: inline-block;
-  cursor: pointer;
-  right: 40px;
-  top: 0.45em;
+  right: 5px;
+  bottom: 0;
   z-index: 0;
   font-weight: 600;
-  padding: 1px 0px;
-  font-size: 16px;
+  font-size: 12px;
 }
 .vditor-reset ul ol,
 .vditor-reset ol ol,
