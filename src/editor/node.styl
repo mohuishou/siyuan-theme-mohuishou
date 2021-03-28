@@ -3,11 +3,8 @@
 wrap(node-tag)
   word-wrap break-word
   letter-spacing 0.05em
-  font-size 14px
   overflow hidden 
-  max-width 200px
   display inline-block
-  white-space nowrap
   margin-bottom -6px
   border-radius 4px
   border 2px solid rgba(0, 0, 0, 0)
@@ -15,6 +12,7 @@ wrap(node-tag)
   text-overflow ellipsis
   cursor pointer
   text-decoration none
+  font-size 14px
   line-height 14px
   font-weight 600
   background lookup(node-tag+"-bg")
@@ -23,7 +21,25 @@ wrap(node-tag)
 node-wrap(node-tag, text-tag = node-tag)
   .vditor-ir__node[data-type=\"{node-tag}\"]
     wrap(node-tag)
-
+      
     .vditor-ir__{text-tag}
       color lookup(node-tag+"-color")
       text-decoration none
+
+// 标签
+node-wrap("tag")
+
+// 块引用
+node-wrap("block-ref", "blockref")
+
+// 行内代码
+code:not(.hljs)
+  wrap("code")
+
+// 标签在块引用内
+.vditor-ir__node[data-type="block-ref"]
+  .vditor-ir__node[data-type="tag"]
+    padding 1px
+    font-size 11px
+    position relative
+    top -1.5px

@@ -1,21 +1,9 @@
 // 编辑器区域样式设置
 @import "font.styl"
 @import "var.styl"
-@import "node.styl"
 
 .vditor-reset
-  @import "code.styl"
-
-  // 标签
-  node-wrap("tag")
-
-  // 块引用
-  node-wrap("block-ref", "blockref")
-
-  // 行内代码
-  code:not(.hljs)
-    wrap("code")
-
+  @import "editor/*.styl"
 
   // mark
   mark

@@ -1,9 +1,7 @@
 {
-  "name": "daylight",
-  "author": "Vanessa",
-  "url": "https://github.com/Vanessa219",
+  "name": "mohuishou",
+  "author": "mohuishou",
+  "url": "https://github.com/mohuishou",
   "version": "1.0.0",
-  "modes": [
-    "light"
-  ]
+  "modes": ["light"]
 }
