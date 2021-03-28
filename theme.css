@@ -16,7 +16,7 @@
   --b3-theme-on-error: #fff;
 /* 字体 */
   --b3-font-family: "Han", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
-  --b3-font-family-code: mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+  --b3-font-family-code: "Code", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
 /* 线条 */
   --b3-border-color: rgba(0,0,0,0.1);
 /* 滚动条 */
@@ -119,9 +119,9 @@
   src: url("fonts/SourceHanSansCN-Regular.otf");
 }
 @font-face {
-  font-family: 'FiraCode';
+  font-family: 'Code';
   font-style: normal;
-  src: url("fonts/FiraCode-Regular.ttf");
+  src: url("fonts/CascadiaMonoPL.ttf");
 }
 .vditor-reset .vditor-ir__node[data-type="code-block"] pre code[class~="language-js"]::before {
   content: "js";
@@ -221,8 +221,8 @@
   text-overflow: ellipsis;
   cursor: pointer;
   text-decoration: none;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 0.85em;
+  line-height: 0.85em;
   font-weight: 600;
   background: #d4eefc;
   color: #003a8c;
@@ -243,8 +243,8 @@
   text-overflow: ellipsis;
   cursor: pointer;
   text-decoration: none;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 0.85em;
+  line-height: 0.85em;
   font-weight: 600;
   background: rgba(59,167,118,0.1);
   color: #3ba776;
@@ -265,17 +265,25 @@
   text-overflow: ellipsis;
   cursor: pointer;
   text-decoration: none;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 0.85em;
+  line-height: 0.85em;
   font-weight: 600;
   background: rgba(27,31,35,0.05);
   color: #e83e8c;
+  font-weight: 400;
+  font-family: var(--b3-font-family-code);
 }
-.vditor-reset .vditor-ir__node[data-type="block-ref"] .vditor-ir__node[data-type="tag"] {
+.vditor-reset .vditor-ir__blockref {
+  display: inline-block;
+  line-height: 1em;
+  align-items: center;
+}
+.vditor-reset .vditor-ir__blockref .vditor-ir__node[data-type="tag"],
+.vditor-reset .vditor-ir__blockref .vditor-ir__node[data-type="code"] code:not(.hljs) {
   padding: 1px;
-  font-size: 11px;
   position: relative;
-  top: -1.5px;
+  top: -0.3em;
+  font-size: 0.8em;
 }
 .vditor-reset mark {
   padding: 2px 4px;
@@ -291,4 +299,15 @@
   border-left: 0.25em solid #3ba776;
   background: rgba(59,167,118,0.1);
   margin: 4px;
+}
+.vditor-reset [data-node-id][fold="1"] {
+  opacity: 1;
+}
+.vditor-reset [data-node-id][fold="1"]::before {
+  content: "▶";
+  font-family: Code;
+  margin-right: 0.2em;
+}
+.vditor-reset [data-node-id][fold="1"]::after {
+  content: "...";
 }

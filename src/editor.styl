@@ -10,7 +10,6 @@
     padding 2px 4px
     border-radius 2px
 
-
   // 链接
   .vditor-ir__link
     text-decoration: none
@@ -23,3 +22,16 @@
     border-left 0.25em solid primary-color
     background primary-bg
     margin 4px
+  
+  // 折叠块
+  [data-node-id][fold="1"]
+    opacity 1
+
+    &::before
+      content "▶"
+      font-family Code
+      margin-right 0.2em
+    
+    &::after
+      content "..."
+    

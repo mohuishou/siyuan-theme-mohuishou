@@ -12,8 +12,8 @@ wrap(node-tag)
   text-overflow ellipsis
   cursor pointer
   text-decoration none
-  font-size 14px
-  line-height 14px
+  font-size 0.85em 
+  line-height @font-size
   font-weight 600
   background lookup(node-tag+"-bg")
   color lookup(node-tag+"-color")
@@ -35,11 +35,17 @@ node-wrap("block-ref", "blockref")
 // 行内代码
 code:not(.hljs)
   wrap("code")
+  font-weight 400
+  font-family var(--b3-font-family-code)
 
 // 标签在块引用内
-.vditor-ir__node[data-type="block-ref"]
-  .vditor-ir__node[data-type="tag"]
+.vditor-ir__blockref
+  display inline-block
+  line-height 1em
+  align-items center 
+  .vditor-ir__node[data-type="tag"],
+  .vditor-ir__node[data-type="code"] code:not(.hljs)
     padding 1px
-    font-size 11px
     position relative
-    top -1.5px
+    top -0.3em
+    font-size 0.8em
