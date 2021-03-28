@@ -303,11 +303,11 @@
 .vditor-reset [data-node-id][fold="1"] {
   opacity: 1;
 }
-.vditor-reset [data-node-id][fold="1"]::before {
+.vditor-reset [data-node-id][fold="1"]:not(ul):not(ol)::before {
   content: "▶";
   font-family: Code;
   margin-right: 0.2em;
 }
-.vditor-reset [data-node-id][fold="1"]::after {
+.vditor-reset [data-node-id][fold="1"]:not(ul):not(ol)::after {
   content: "...";
 }

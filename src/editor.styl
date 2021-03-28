@@ -26,12 +26,12 @@
   // 折叠块
   [data-node-id][fold="1"]
     opacity 1
-
-    &::before
-      content "▶"
-      font-family Code
-      margin-right 0.2em
-    
-    &::after
-      content "..."
+    &:not(ul):not(ol)
+      &::before
+        content "▶"
+        font-family Code
+        margin-right 0.2em
+      
+      &::after
+        content "..."
     
