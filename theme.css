@@ -289,4 +289,5 @@
 .vditor-reset blockquote {
   border-left: 0.25em solid #3ba776;
   background: rgba(59,167,118,0.1);
+  margin: 4px;
 }
