@@ -183,6 +183,7 @@
 .vditor-reset .vditor-ir__node[data-type="code-block"] pre code.hljs {
   margin: 4px;
   padding-bottom: 16px !important;
+  padding-top: 6px !important;
 }
 .vditor-reset .vditor-ir__node[data-type="code-block"] pre code.hljs::before {
   position: absolute;
@@ -214,10 +215,10 @@
   letter-spacing: 0.05em;
   overflow: hidden;
   display: inline-block;
-  margin-bottom: -6px;
+  margin-bottom: -0.3em;
   border-radius: 4px;
-  border: 2px solid rgba(0,0,0,0);
-  padding: 3px;
+  border: 1px solid rgba(0,0,0,0);
+  padding: 0.25em;
   text-overflow: ellipsis;
   cursor: pointer;
   text-decoration: none;
@@ -236,10 +237,10 @@
   letter-spacing: 0.05em;
   overflow: hidden;
   display: inline-block;
-  margin-bottom: -6px;
+  margin-bottom: -0.3em;
   border-radius: 4px;
-  border: 2px solid rgba(0,0,0,0);
-  padding: 3px;
+  border: 1px solid rgba(0,0,0,0);
+  padding: 0.25em;
   text-overflow: ellipsis;
   cursor: pointer;
   text-decoration: none;
@@ -258,10 +259,10 @@
   letter-spacing: 0.05em;
   overflow: hidden;
   display: inline-block;
-  margin-bottom: -6px;
+  margin-bottom: -0.3em;
   border-radius: 4px;
-  border: 2px solid rgba(0,0,0,0);
-  padding: 3px;
+  border: 1px solid rgba(0,0,0,0);
+  padding: 0.25em;
   text-overflow: ellipsis;
   cursor: pointer;
   text-decoration: none;
