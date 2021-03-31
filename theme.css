@@ -205,6 +205,7 @@
 }
 .vditor-reset .vditor-task input[type="checkbox"] {
   position: relative;
+  margin-top: -0.2em;
   width: 1em;
   height: 1em;
   font-size: 1em;

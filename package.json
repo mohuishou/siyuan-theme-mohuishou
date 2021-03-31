@@ -1,0 +1,19 @@
+{
+  "name": "mohuishou",
+  "version": "1.0.0",
+  "description": "> 这是一款自用的主题 >",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx stylus -w theme.styl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohuishou/siyuan-theme-mohuishou.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohuishou/siyuan-theme-mohuishou/issues"
+  },
+  "homepage": "https://github.com/mohuishou/siyuan-theme-mohuishou#readme"
+}
