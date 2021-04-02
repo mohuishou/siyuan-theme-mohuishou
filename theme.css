@@ -205,7 +205,6 @@
 }
 .vditor-reset .vditor-task input[type="checkbox"] {
   position: relative;
-  margin-top: -0.2em;
   width: 1em;
   height: 1em;
   font-size: 1em;
@@ -307,16 +306,18 @@
 .vditor-reset h3,
 .vditor-reset h4 {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .vditor-reset [data-node-id][fold="1"] {
   opacity: 1;
+  display: flex;
 }
-.vditor-reset [data-node-id][fold="1"]:not(ul):not(ol)::before {
+.vditor-reset [data-node-id][fold="1"]:not(ul):not(ol):not(li)::before {
   content: "▶";
   font-family: Code;
   margin-right: 0.2em;
 }
-.vditor-reset [data-node-id][fold="1"]:not(ul):not(ol)::after {
+.vditor-reset [data-node-id][fold="1"]:not(ul):not(ol):not(li)::after {
   content: "...";
 }
 .file-tree li {

@@ -26,11 +26,13 @@
   // 标题
   h1, h2, h3, h4
     margin-top 10px
+    margin-bottom 10px
   
   // 折叠块
   [data-node-id][fold="1"]
     opacity 1
-    &:not(ul):not(ol)
+    display flex
+    &:not(ul):not(ol):not(li)
       &::before
         content "▶"
         font-family Code
